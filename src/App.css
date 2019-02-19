@@ -18,10 +18,25 @@
     src: url('/public/fonts/GloriaHallelujah.ttf');
 }
 
-h1, h2, h3 ,h4, h5, h6 {
-    font-family: 'GloriaHallelujah'
+@font-face {
+    font-family: 'Kanit-Medium';
+    src: url('/public/fonts/Kanit-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Kanit-Bold';
+    src: url('/public/fonts/Kanit-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Kanit-Regular';
+    src: url('/public/fonts/Kanit-Regular.ttf');
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Kanit-Regular'
 }
 
 .title {
-    font-family: 'Rubik-Medium'
+    font-family: 'Kanit-Regular'
 }

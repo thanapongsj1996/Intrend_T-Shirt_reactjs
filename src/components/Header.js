@@ -19,7 +19,7 @@ class Header extends Component {
             <div className='container-fluid'>
                 <div className='row '>
                     <div className='col-md-8 text-left'>
-                        <h1 className='text-muted'><img style={{height: 50}} src='/images/logo/logo.png' alt='' />Intrend T-Shirt</h1>
+                        <h1 className='text-muted title'><img style={{height: 50}} src='/images/logo/logo.png' alt='' />Intrend T-Shirt</h1>
                     </div>
                     <div className='col-md-4 text-right'>
                         <h5 className='text-muted mt-3'>{this.state.date.toLocaleTimeString()}</h5>

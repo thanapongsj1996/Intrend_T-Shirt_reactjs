@@ -9,7 +9,7 @@ class Monitor extends Component {
             <div className='container-fluid'>
                 <div className='row'>
                     <div className='col-md-9'>
-                        <ProductList products={this.props} />
+                        <ProductList products={this.props.products} />
                     </div>
                     <div className='col-md-3'>
                         <Calculator />

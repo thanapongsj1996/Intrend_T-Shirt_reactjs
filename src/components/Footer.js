@@ -5,7 +5,7 @@ const Footer = (props) => {
     return (
         <div className='container-fluid'>
             <hr />
-            <div className='text-center title text-uppercase'>
+            <div className='text-center text-uppercase'>
                 <small>
                     <span className='text-danger'>Powerd By {company}</span> | <span className='text-muted'>Contact By Email : {email}</span>
                 </small>
