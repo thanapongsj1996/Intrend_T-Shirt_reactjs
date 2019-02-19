@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Monitor from './components/monitor/Monitor'
-import ProductItem from './components/product/ProductItem'
+import axios from 'axios'
 
 
 class App extends Component {
@@ -16,12 +16,22 @@ class App extends Component {
   }
 
   componentDidMount() {
-    this.setState({
-      products: [
-        {productId: 1, productName: 'เสื้อตามกระแส 1', unitPrice: '250', thumbnail:'/images/products/1.jpg'},
-        {productId: 2, productName: 'เสื้อตามกระแส 2', unitPrice: '350', thumbnail:'/images/products/2.jpg'},
-        {productId: 3, productName: 'เสื้อตามกระแส 3', unitPrice: '450', thumbnail:'/images/products/3.jpg'}
-      ]
+
+    // this.setState({
+    //   products: [
+    //     {productId: 1, productName: 'เสื้อตามกระแส 1', unitPrice: '250', thumbnail:'/images/products/1.jpg'},
+    //     {productId: 2, productName: 'เสื้อตามกระแส 2', unitPrice: '350', thumbnail:'/images/products/2.jpg'},
+    //     {productId: 3, productName: 'เสื้อตามกระแส 3', unitPrice: '450', thumbnail:'/images/products/3.jpg'}
+    //   ]
+    // })
+
+    // fetch('http://localhost:3001/products', { method: 'GET' })
+    //   .then(res => res.json())
+    //   .then(res => { this.setState({ products: res }) })
+
+    axios.get('http://localhost:3001/products').then(res => {
+      console.log(res.data)
+      this.setState({ products: res.data })
     })
   }
 
