@@ -1,27 +1,4 @@
 {
-  "products": [
-    {
-      "id": 1,
-      "productId": "P001",
-      "productName": "เสื้อตามกระแส 1",
-      "unitPrice": "250",
-      "thumbnail": "/images/products/1.jpg"
-    },
-    {
-      "id": 2,
-      "productId": "P002",
-      "productName": "เสื้อตามกระแส 2",
-      "unitPrice": "350",
-      "thumbnail": "/images/products/2.jpg"
-    },
-    {
-      "id": 3,
-      "productId": "P003",
-      "productName": "เสื้อตามกระแส 3",
-      "unitPrice": "450",
-      "thumbnail": "/images/products/3.jpg"
-    }
-  ],
   "orders": [
     {
       "orderedDate": "2019-02-19T19:40:33.812Z",
@@ -68,9 +45,66 @@
       "id": 2
     },
     {
-      "orderedDate": "2019-02-19T19:57:42.466Z",
-      "totalPrice": 900,
+      "orderedDate": "2019-02-20T13:50:43.089Z",
+      "totalPrice": 1500,
       "orders": [
+        {
+          "product": {
+            "id": 3,
+            "productId": "P003",
+            "productName": "เสื้อตามกระแส 3",
+            "unitPrice": "450",
+            "thumbnail": "/images/products/3.jpg"
+          },
+          "quantity": 2
+        },
+        {
+          "product": {
+            "id": 2,
+            "productId": "P002",
+            "productName": "เสื้อตามกระแส 2",
+            "unitPrice": "350",
+            "thumbnail": "/images/products/2.jpg"
+          },
+          "quantity": 1
+        },
+        {
+          "product": {
+            "id": 1,
+            "productId": "P001",
+            "productName": "เสื้อตามกระแส 1",
+            "unitPrice": "250",
+            "thumbnail": "/images/products/1.jpg"
+          },
+          "quantity": 1
+        }
+      ],
+      "id": 7
+    },
+    {
+      "orderedDate": "2019-02-20T14:00:18.511Z",
+      "totalPrice": 2100,
+      "orders": [
+        {
+          "product": {
+            "id": 1,
+            "productId": "P001",
+            "productName": "เสื้อตามกระแส 1",
+            "unitPrice": "250",
+            "thumbnail": "/images/products/1.jpg"
+          },
+          "quantity": 2
+        },
+        {
+          "product": {
+            "id": 2,
+            "productId": "P002",
+            "productName": "เสื้อตามกระแส 2",
+            "unitPrice": "350",
+            "thumbnail": "/images/products/2.jpg"
+          },
+          "quantity": 2
+        },
         {
           "product": {
             "id": 3,
@@ -82,7 +116,47 @@
           "quantity": 2
         }
       ],
-      "id": 3
+      "id": 8
+    },
+    {
+      "orderedDate": "2019-02-20T14:07:40.819Z",
+      "totalPrice": 1350,
+      "orders": [
+        {
+          "product": {
+            "id": 3,
+            "productId": "P003",
+            "productName": "เสื้อตามกระแส 3",
+            "unitPrice": "450",
+            "thumbnail": "/images/products/3.jpg"
+          },
+          "quantity": 3
+        }
+      ],
+      "id": 9
+    }
+  ],
+  "shirts": [
+    {
+      "id": 1,
+      "productId": "P001",
+      "productName": "เสื้อตามกระแส 1",
+      "unitPrice": "250",
+      "thumbnail": "/images/products/1.jpg"
+    },
+    {
+      "id": 2,
+      "productId": "P002",
+      "productName": "เสื้อตามกระแส 2",
+      "unitPrice": "350",
+      "thumbnail": "/images/products/2.jpg"
+    },
+    {
+      "id": 3,
+      "productId": "P003",
+      "productName": "เสื้อตามกระแส 3",
+      "unitPrice": "450",
+      "thumbnail": "/images/products/3.jpg"
     }
   ]
 }

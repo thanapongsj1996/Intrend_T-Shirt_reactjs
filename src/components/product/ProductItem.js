@@ -6,10 +6,6 @@ class ProductItem extends Component {
         super(props)
     }
 
-    doSomething(a){
-        alert(a)
-    }
-
     render() {
         const { productName, unitPrice, thumbnail } = this.props.product
         return (

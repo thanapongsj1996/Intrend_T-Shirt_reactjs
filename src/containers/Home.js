@@ -28,7 +28,7 @@ class Home extends Component {
     //   .then(res => res.json())
     //   .then(res => { this.setState({ products: res }) })
 
-    axios.get('http://localhost:3001/products').then(res => {
+    axios.get('http://localhost:3001/shirts').then(res => {
       console.log(res.data)
       this.setState({ products: res.data })
     })
