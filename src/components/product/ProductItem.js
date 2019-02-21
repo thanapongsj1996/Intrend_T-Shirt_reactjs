@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { throws } from 'assert';
 
 class ProductItem extends Component {
 
@@ -13,9 +14,25 @@ class ProductItem extends Component {
                 <img className='img-fluid img-thumbnail' src={thumbnail} />
                 <h5 className='mt-2'>{productName}</h5>
                 <p className='title text-right'>{unitPrice} THB</p>
-                <button className='btn btn-block btn-secondary title' value={unitPrice} onClick={()=> this.props.onAddOrder(this.props.product)}>
-                    ซื้อ
-                </button>
+
+                {this.props.onAddOrder &&
+                    <button className='btn btn-block btn-secondary title' value={unitPrice} onClick={() => this.props.onAddOrder(this.props.product)}>
+                        ซื้อ
+                    </button>
+                }
+
+                {(this.props.onDeleteProduct || this.props.onEditProduct) &&
+                    <button className='btn btn-info col-5 title' onClick={() => this.props.onEditProduct(this.props.product)}>
+                        แก้ไข
+                    </button>
+                }
+
+                {(this.props.onDeleteProduct || this.props.onEditProduct) &&
+                    <button className='btn btn-danger col-5 float-right title' value={unitPrice} onClick={() => this.props.onDeleteProduct(this.props.product)}>
+                        ลบ
+                    </button>
+                }
+
                 <hr />
             </div>
         )
