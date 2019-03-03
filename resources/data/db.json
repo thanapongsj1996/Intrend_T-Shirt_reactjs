@@ -167,6 +167,23 @@
         }
       ],
       "id": 10
+    },
+    {
+      "orderedDate": "2019-03-03T13:22:38.925Z",
+      "totalPrice": 1000,
+      "orders": [
+        {
+          "product": {
+            "id": 1,
+            "productId": "P001",
+            "productName": "เสื้อตามกระแส 1",
+            "unitPrice": "250",
+            "thumbnail": "/images/products/1.jpg"
+          },
+          "quantity": 4
+        }
+      ],
+      "id": 11
     }
   ]
 }
