@@ -11,7 +11,7 @@ class ProductItem extends Component {
         const { productName, unitPrice, thumbnail } = this.props.product
         return (
             <div className='col-md-3 col-sm-6'>
-                <img className='img-fluid img-thumbnail' src={thumbnail} />
+                <img className='img-fluid img-thumbnail' style={{width: 500,height: 200}} src={thumbnail} />
                 <h5 className='mt-2'>{productName}</h5>
                 <p className='title text-right'>{unitPrice} THB</p>
 
