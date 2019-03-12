@@ -5,7 +5,7 @@ import { ORDERS_FETCH } from './types'
 export const ordersFetch = () => {
 
     return dispatch => {
-        axios.get('http://localhost:3001/orders')
+        axios.get(process.env.REACT_APP_API_URL + '/orders')
             .then(res => {
                 dispatch({ type: ORDERS_FETCH, payload: res.data })
             })
@@ -14,9 +14,9 @@ export const ordersFetch = () => {
 
 export const orderDelete = id => {
     return dispatch => {
-        axios.delete('http://localhost:3001/orders/' + id)
+        axios.delete(process.env.REACT_APP_API_URL + '/orders/' + id)
             .then(res => {
-                axios.get('http://localhost:3001/orders')
+                axios.get(process.env.REACT_APP_API_URL + '/orders')
                     .then(res => {
                         dispatch({ type: ORDERS_FETCH, payload: res.data })
                     })
